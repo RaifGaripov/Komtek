@@ -15,17 +15,13 @@
    ```bash
    git clone https://github.com/RaifGaripov/Komtek.git
    ```
-2. Откройте папку
-   ```bash
-   cd Komtek
-   ```
-3. Запустите сервер
+2. Запустите сервер
    ```bash
    python manage.py runserver
    ```
-4. Для входа в панель админа возпользуйтесь логином и паролем `admin`
+3. Для входа в панель админа возпользуйтесь логином и паролем `admin`
 
-5. Для запуска тестов
+4. Для запуска тестов
    ```bash
    python manage.py test doc_managment
    ```
