@@ -27,13 +27,22 @@
    ```bash
    pip install -r requirements.txt
    ```
-5. Запустите сервер
+6. Внесите миграции в базу данных
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ``` 
+7. Загрузите фикстуры
+   ```bash
+   python manage.py loaddata fixtures/initial_data.json 
+   ```
+8. Запустите сервер
    ```bash
    python manage.py runserver
    ```
-6. Для входа в панель админа возпользуйтесь логином и паролем `admin`
+9. Для входа в панель админа возпользуйтесь логином и паролем `admin`
 
-5. Для запуска тестов
+10. Для запуска тестов
    ```bash
    python manage.py test doc_managment
    ```
