@@ -1,0 +1,173 @@
+[
+{
+    "model": "doc_managment.refbook",
+    "pk": 1,
+    "fields": {
+        "code": "1",
+        "name": "Специальности медицинских работников",
+        "description": ""
+    }
+},
+{
+    "model": "doc_managment.refbook",
+    "pk": 2,
+    "fields": {
+        "code": "2",
+        "name": "Лекарства",
+        "description": ""
+    }
+},
+{
+    "model": "doc_managment.refbookversion",
+    "pk": 1,
+    "fields": {
+        "refbook": 1,
+        "version": "1.0",
+        "start_date": "2022-01-01"
+    }
+},
+{
+    "model": "doc_managment.refbookversion",
+    "pk": 2,
+    "fields": {
+        "refbook": 1,
+        "version": "2.0",
+        "start_date": "2022-02-02"
+    }
+},
+{
+    "model": "doc_managment.refbookversion",
+    "pk": 3,
+    "fields": {
+        "refbook": 2,
+        "version": "1.0",
+        "start_date": "2023-01-01"
+    }
+},
+{
+    "model": "doc_managment.refbookversion",
+    "pk": 4,
+    "fields": {
+        "refbook": 2,
+        "version": "2.0",
+        "start_date": "2023-02-01"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 1,
+    "fields": {
+        "refbook_version": 1,
+        "code": "1",
+        "value": "Врач-терапевт"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 2,
+    "fields": {
+        "refbook_version": 1,
+        "code": "2",
+        "value": "Травматолог-ортопед"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 3,
+    "fields": {
+        "refbook_version": 1,
+        "code": "3",
+        "value": "Хирург"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 4,
+    "fields": {
+        "refbook_version": 2,
+        "code": "1",
+        "value": "Врач-терапевт"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 5,
+    "fields": {
+        "refbook_version": 2,
+        "code": "2",
+        "value": "Травматолог-ортопед"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 6,
+    "fields": {
+        "refbook_version": 2,
+        "code": "3",
+        "value": "Хирург"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 7,
+    "fields": {
+        "refbook_version": 2,
+        "code": "4",
+        "value": "Офтальмолог"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 8,
+    "fields": {
+        "refbook_version": 3,
+        "code": "1",
+        "value": "Парацетамол"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 9,
+    "fields": {
+        "refbook_version": 3,
+        "code": "2",
+        "value": "Ибупрофен"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 10,
+    "fields": {
+        "refbook_version": 4,
+        "code": "1",
+        "value": "Ибупрофен"
+    }
+},
+{
+    "model": "doc_managment.refbookelement",
+    "pk": 11,
+    "fields": {
+        "refbook_version": 4,
+        "code": "2",
+        "value": "Анальгин"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$vogMhS9LNtTE3QmPVa75HV$zYkuiySRDFMlt+pxljxZleF0lRn3LLaOaR6GC1FyS14=",
+        "last_login": "2024-07-24T09:48:15.671Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@a.ru",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-07-22T09:04:44.822Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

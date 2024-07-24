@@ -39,7 +39,7 @@ class RefBookVersion(models.Model):
 
 class RefBookElement(models.Model):
     refbook_version = models.ForeignKey(RefBookVersion, on_delete=models.CASCADE, verbose_name="Версия")
-    code = models.CharField(max_length=100, unique=True, verbose_name="Код элемента")
+    code = models.CharField(max_length=100, verbose_name="Код элемента")
     value = models.CharField(max_length=300, verbose_name="Значение элемента")
 
     class Meta:

@@ -53,8 +53,10 @@ class RefBookListView(APIView):
         filtered_refbooks = []
 
         if date_str:
-            date = datetime.strptime(date_str, '%Y-%m-%d').date()
-
+            try:
+                date = datetime.strptime(date_str, '%Y-%m-%d').date()
+            except ValueError as e:
+                return Response({"error": e.args}, status=400)
             for refbook in refbooks:
                 versions = refbook.refbookversion_set.all()
                 if versions:
